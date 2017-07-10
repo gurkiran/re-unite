@@ -1,0 +1,163 @@
+body {
+    max-width: 95vw;
+    font-size: 16px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+}
+
+body:before {
+    content: "";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    background: url(http://genheration.com/wp-content/uploads/2016/04/New-York-City-Skyline.jpg);
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */
+    height: 20%; width: 20%;
+    transform: scale(5);
+    -moz-transform: scale(5);
+    transform-origin: top left;
+    filter: blur(1px);
+}
+
+
+.search-background {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search {
+    width: 30%;
+}
+.search input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid currentColor;
+}
+.search input[placeholder] {
+    font-size: 1.5rem;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #d6d6d6;
+}
+
+.city-cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.city {
+    width: 33%;
+    height: 200px;
+    position: relative;
+    margin-top: 10px;
+    margin-right:0px;
+}
+.city .city-name {
+    color: #fff;
+    position: absolute;
+    width: 0%;
+    font-size: 2rem;
+    overflow: hidden;
+    /*display: none;*/
+    top: 50%;
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+    background-color: rebeccapurple;
+
+}
+.city .city-name  h1{
+    font-weight: 100;
+}
+.city .city-image {
+    width: 100%;
+    height: 100%;
+}
+
+.city:hover  {
+    cursor: pointer;
+}
+
+.city:hover .city-image {
+    opacity: 0.1;
+}
+
+.city:hover .city-name {
+    display: block;
+    width: 100%;
+}
+.add-city {
+    width: 75%;
+    display: none;
+}
+
+.add-city .input-city {
+    display: flex;
+    color: rebeccapurple;
+    font-size: 2rem;
+        
+}
+
+.add-city .browse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+.add-city input[type='text'] {
+    width: 50%;
+    height: 40px;
+    font-size: 2rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0px;
+    margin: 0;
+    border-bottom: 1px solid currentColor;
+}
+
+.add-city input::-webkit-input-placeholder{
+    color: #555;
+    font-weight: 100;
+}
+
+.add-city input[type='file'] {
+    height: 40px;
+    width: 25%;
+}
+
+.add-city button {
+    background: transparent;    
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    font-size: 2rem;
+    outline: 1px solid currentColor;
+    color: #000;
+}
+
+.add-city button:hover {
+ outline: 1px solid rebeccapurple;
+}
+
+.optional-image {
+    width: 25%;
+    margin-left: 55%;
+}
+.optional-image input[name='optional'] {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.optional-image input::-webkit-input-placeholder {
+    color: #000;
+}

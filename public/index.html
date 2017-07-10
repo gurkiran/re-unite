@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Experiment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+       <div class='search-background'>
+        <div class='search'>
+          <input type="text" name="search" placeholder='Search a city'/>
+          </div>
+      </div>
+    <div class='add-city'>
+      <div class='input-city'>
+         <p>Add a city</p>
+      </div>
+     
+      <div class='browse'>
+        <input type="text" name="added-city" placeholder='Name'/> 
+        <input type="file" id="input" onchange="handleFiles(this.files)">
+        <button>Submit</button>
+      </div>
+      <div class='optional-image'>
+        <input type="text" name="optional" placeholder='OR paste an image url'/>
+      </div>
+    </div>
+    <div class='city-cards'>
+    </div>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+   <script type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>
