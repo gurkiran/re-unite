@@ -1,7 +1,7 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var app = express()
-var _ = require('lodash')
+// var _ = require('lodash')
 
 // var cities = [
 //     {name:'batala', img:'https://moneykundal.files.wordpress.com/2012/09/shamsher-khan-tomb.jpg'},
